@@ -10,7 +10,7 @@ alarm_time_m = 61
 
 ringing = False
 
-with open("time") as f:
+with open("/home/pi/wakey-wakey.py/time") as f:
 	content = f.readlines()[0].split(":")
 	alarm_time_h = int(content[0])
 	alarm_time_m = int(content[1])
